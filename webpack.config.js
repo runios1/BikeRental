@@ -1,8 +1,9 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: ["./src/index.js"],
+  entry: ["./src/js/index.js"],
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
@@ -19,34 +20,35 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
     ],
   },
   plugins: [
+    new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: "src/index.html",
+      template: "src/html/index.html",
     }),
     new HtmlWebpackPlugin({
       filename: "home.html",
-      template: "src/home.html",
+      template: "src/html/home.html",
     }),
     new HtmlWebpackPlugin({
       filename: "myBikes.html",
-      template: "src/myBikes.html",
+      template: "src/html/myBikes.html",
     }),
     new HtmlWebpackPlugin({
       filename: "rent.html",
-      template: "src/rent.html",
+      template: "src/html/rent.html",
     }),
     new HtmlWebpackPlugin({
       filename: "sent.html",
-      template: "src/sent.html",
+      template: "src/html/sent.html",
     }),
     new HtmlWebpackPlugin({
       filename: "upload.html",
-      template: "src/upload.html",
+      template: "src/html/upload.html",
     }),
   ],
 };
