@@ -3,21 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="generalStyle.css" />
+    <link rel="stylesheet" href="rentStyle.css" />
     <title>Document</title>
   </head>
   <body>
     <h1>Rent a bike</h1>
-    <form>
-      <label for="city">City:</label>
-      <input type="text" id="city" name="city" /><br /><br />
-      <label for="date">Date:</label>
-      <input type="date" id="date" name="date" /><br /><br />
+    <form class="searchBar">
+      <div class="formField">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" />
+      </div>
+      <div class="formField">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" />
+      </div>
       <input type="submit" value="Search" />
     </form>
     <ul>
       <li>
-        <div>
-          <img src="" />
+        <div class="bikeCard">
+          <img
+            src="https://p.vitalmtb.com/photos/users/38191/setup_checks/31002/photos/49168/original_001.jpg?1453396172"
+          />
           <div>
             <ul>
               <li>name</li>
@@ -30,8 +38,10 @@
         </div>
       </li>
       <li>
-        <div>
-          <img src="" />
+        <div class="bikeCard">
+          <img
+            src="https://p.vitalmtb.com/photos/users/38191/setup_checks/31002/photos/49168/original_001.jpg?1453396172"
+          />
           <div>
             <ul>
               <li>name</li>
