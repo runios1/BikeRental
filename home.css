@@ -1,0 +1,39 @@
+/* Styles for the top bar */
+.top-bar {
+  background-color: #333;
+  color: #fff;
+  padding: 3dvh;
+  text-align: center;
+}
+.top-bar button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 20px; /* Increase font size for button text */
+}
+/* Styles for the big buttons */
+.big-buttons {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.big-buttons button {
+  padding: 30px; /* Increase padding for bigger buttons */
+  font-size: 30px;
+  margin: 0 10px;
+  width: 200px; /* Set width for square shape */
+  height: 200px; /* Set height for square shape */
+  border: none; /* Remove default button border */
+  background-color: #aebbc8; /* Change background color */
+  color: #fff; /* Change text color */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+/* Styles for the password form */
+.password-form {
+  text-align: center;
+  margin-top: 20px;
+}
