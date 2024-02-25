@@ -140,7 +140,6 @@ h1 {
 body {
   display: flex;
   flex-direction: column;
-  margin: 5px;
 }
 
 body {
@@ -164,4 +163,25 @@ body {
 
 .hidden {
   display: none;
+}
+
+.bikeCard {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 5px;
+}
+
+.bikeCard img {
+  height: 150px;
+}
+
+.bikeCard > div {
+  margin-left: 20px;
+}
+
+.bikeCard > div > ul {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
