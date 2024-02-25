@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rent Bike- Home</title>
+    <link rel="stylesheet" href="home.css" />
   </head>
   <body>
-    <nav>
-      <button>edit password</button>
-      <button>my bikes</button>
-      <button>sent requests</button>
+    <nav class="top-bar">
+      <button>Edit Password</button>
+      <button>My Bikes</button>
+      <button>Sent Requests</button>
     </nav>
     <main>
-      <button>upload my bike</button>
-      <button>rent a bike</button>
-      <form>
+      <div class="big-buttons">
+        <button>Upload My Bike</button>
+        <button>Rent a Bike</button>
+      </div>
+      <form class="password-form">
         <label for="oldPassword">Old Password:</label>
         <input
           type="password"
@@ -22,7 +25,6 @@
           name="oldPassword"
           required
         /><br /><br />
-
         <label for="newPassword">New Password:</label>
         <input
           type="password"
@@ -30,7 +32,6 @@
           name="newPassword"
           required
         /><br /><br />
-
         <input type="submit" value="Change Password" />
       </form>
     </main>
