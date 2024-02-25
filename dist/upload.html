@@ -4,10 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="upload.css" />
+    <link rel="stylesheet" href="generalStyle.css" />
+    <style>
+      /* Additional CSS for date range inputs */
+      .date-range {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .date-range label {
+        flex: 1;
+        margin-right: 10px;
+      }
+
+      .date-range input[type="date"] {
+        flex: 1;
+      }
+    </style>
   <script defer src="main.js"></script></head>
   <body>
     <h1>Upload a bike</h1>
-    <form>
+    <form class="formbox">
       <label for="image">Image:</label>
       <input type="file" id="image" name="image" /><br /><br />
 
@@ -17,8 +35,14 @@
       <label for="city">City:</label>
       <input type="text" id="city" name="city" /><br /><br />
 
-      <label for="date">Date:</label>
-      <input type="date" id="date" name="date" /><br /><br />
+      <div class="date-range">
+        <label for="dateStart">Start Date:</label>
+        <input type="date" id="dateStart" name="dateStart" />
+
+        <label for="dateEnd">End Date:</label>
+        <input type="date" id="dateEnd" name="dateEnd" />
+      </div>
+      <br /><br />
 
       <label for="price">Price per day:</label>
       <input type="number" id="price" name="price" /><br /><br />
