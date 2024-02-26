@@ -3,7 +3,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: ["./src/js/index.js"],
+  entry: {
+    upload: "./src/js/uploadDOMManipulation.js",
+  },
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
@@ -49,6 +51,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "upload.html",
       template: "src/html/upload.html",
+      chunks: ["upload"],
     }),
   ],
 };

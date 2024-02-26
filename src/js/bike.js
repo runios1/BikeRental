@@ -9,3 +9,5 @@ class Bike {
     this.#user = user;
   }
 }
+
+export default Bike;
