@@ -9,7 +9,7 @@ module.exports = {
     upload: "./src/js/uploadDOMManipulation.js",
   },
   output: {
-    filename: "[name].js",
+    filename: "main.js",
     path: path.resolve(__dirname, "dist"),
   },
   devServer: {
@@ -29,31 +29,49 @@ module.exports = {
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "src/html/index.html",
+      chunks: ["index"],
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
     }),
     new HtmlWebpackPlugin({
       filename: "home.html",
       template: "src/html/home.html",
     }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+    }),
     new HtmlWebpackPlugin({
       filename: "myBikes.html",
       template: "src/html/myBikes.html",
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
     }),
     new HtmlWebpackPlugin({
       filename: "rent.html",
       template: "src/html/rent.html",
     }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+    }),
     new HtmlWebpackPlugin({
       filename: "sent.html",
       template: "src/html/sent.html",
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
     }),
     new HtmlWebpackPlugin({
       filename: "upload.html",
       template: "src/html/upload.html",
       chunks: ["upload"],
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
     }),
   ],
 };
