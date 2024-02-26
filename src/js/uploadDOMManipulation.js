@@ -1,5 +1,3 @@
-import "../css/uploadStyle.css";
-import "../css/generalStyle.css";
 import Bike from "./bike.js";
 
 function handleFormSubmit(event) {
