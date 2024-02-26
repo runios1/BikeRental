@@ -3,41 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BikeRental</title>
-  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+    <title>BikeRental2</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  <script defer src="index.js"></script><script defer src="indexDomManipulation.js"></script><link href="index.css" rel="stylesheet"></head>
   <body>
     <h1>Rent Bike</h1>
     <div class="formbox">
-      <form>
+      <form id="loginForm">
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required /><br /><br />
+        <input
+          type="text"
+          id="loginUsername"
+          name="username"
+          required
+        /><br /><br />
 
         <label for="password">Password:</label>
         <input
           type="password"
-          id="password"
+          id="loginPassword"
           name="password"
           required
         /><br /><br />
 
         <input type="submit" value="Sign In" /><br /><br />
 
-        <p>Don't have an account? <a href="#">Sign Up</a></p>
+        <p>Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
       </form>
     </div>
 
-    <div class="formbox hidden">
-      <form class="Signup">
+    <div class="formbox hidden" id="signupBox">
+      <form id="signupForm">
         <label for="fullName">Full Name:</label>
         <input type="text" id="fullName" name="fullName" required /><br /><br />
 
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required /><br /><br />
+        <label for="signupUsername">Username:</label>
+        <input
+          type="text"
+          id="signupUsername"
+          name="username"
+          required
+        /><br /><br />
 
-        <label for="password">Password:</label>
+        <label for="signupPassword">Password:</label>
         <input
           type="password"
-          id="password"
+          id="signupPassword"
           name="password"
           required
         /><br /><br />
@@ -55,8 +70,10 @@
 
         <input type="submit" value="Sign Up" /><br /><br />
 
-        <p>Already have an account? <a href="#">Sign In</a></p>
+        <p>Already have an account? <a href="#" id="showLogin">Sign In</a></p>
       </form>
     </div>
+
+    <script src="../js/indexDomManipulation.js"></script>
   </body>
 </html>
