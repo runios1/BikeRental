@@ -4,10 +4,12 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
+    index: "./src/js/index.js",
+    indexDomManipulation: "./src/js/indexDomManipulation.js",
     upload: "./src/js/uploadDOMManipulation.js",
   },
   output: {
-    filename: "main.js",
+    filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
   },
   devServer: {
