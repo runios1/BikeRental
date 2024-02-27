@@ -1,5 +1,3 @@
-// indexFormSubmit.js
-
 document.addEventListener("DOMContentLoaded", function () {
   const signupForm = document.getElementById("signupForm");
   const signinForm = document.getElementById("signinForm");
@@ -7,9 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   signupForm.addEventListener("submit", function (e) {
     e.preventDefault();
-    console.log("Sign-up form submitted"); // Log message
     const formData = new FormData(signupForm);
-    fetch("/users/signup", {
+    fetch("http://localHost:5500/users/signup", {
       method: "POST",
       body: formData,
     })
@@ -32,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   signinForm.addEventListener("submit", function (e) {
     e.preventDefault();
     const formData = new FormData(signinForm);
-    fetch("/users/signup", {
+    fetch("http://localHost:5500/users/signin", {
       method: "POST",
       body: formData,
     })
