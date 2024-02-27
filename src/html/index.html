@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,8 +9,13 @@
   </head>
   <body>
     <h1>Rent Bike</h1>
+
+    <!-- Error message container -->
+    <div id="errorContainer" class="error-message hidden"></div>
+
     <div class="formbox">
-      <form id="loginForm">
+      <form id="signinForm">
+        <!-- Updated form ID -->
         <label for="username">Username:</label>
         <input
           type="text"
@@ -27,6 +33,7 @@
         /><br /><br />
 
         <input type="submit" value="Sign In" /><br /><br />
+        <!-- Updated button value -->
 
         <p>Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
       </form>
@@ -71,5 +78,6 @@
     </div>
 
     <script src="../js/indexDomManipulation.js"></script>
+    <script src="../js/indexFormSubmit.js"></script>
   </body>
 </html>
