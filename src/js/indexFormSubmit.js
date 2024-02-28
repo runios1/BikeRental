@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .then((data) => {
         console.log("Sign-in Success:", data);
-        window.location.href = "/src/html/home.html";
+        window.location.href = "/BikeRental/src/html/home.html";
       })
       .catch((error) => {
         console.error("Sign-in Error:", error);
