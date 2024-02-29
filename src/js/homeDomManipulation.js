@@ -1,5 +1,3 @@
-// homeDomManipulation.js
-
 document.addEventListener("DOMContentLoaded", function () {
   const uploadButton = document.getElementById("uploadButton");
   const rentButton = document.getElementById("rentButton");
@@ -32,6 +30,4 @@ document.addEventListener("DOMContentLoaded", function () {
     uploadButton.classList.toggle("hidden");
     rentButton.classList.toggle("hidden");
   });
-
-  // Add event listener for the password form submission if needed
 });

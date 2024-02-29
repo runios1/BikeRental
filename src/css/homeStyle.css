@@ -1,8 +1,7 @@
-/* Styles for the top bar */
 .top-bar {
   background-color: #333;
   color: #fff;
-  padding: 3vh; /* Adjusted padding */
+  padding: 3vh;
   text-align: center;
 }
 
@@ -12,31 +11,28 @@
   color: #fff;
   cursor: pointer;
   margin: 0 10px;
-  font-size: 20px; /* Increase font size for button text */
+  font-size: 20px;
 }
 
-/* Styles for the big buttons */
 .big-buttons {
   text-align: center;
   margin-top: 100px;
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center the items horizontally */
+  display: flex;
+  justify-content: center;
 }
 
 .big-buttons button {
-  padding: 30px; /* Increase padding for bigger buttons */
+  padding: 30px;
   font-size: 30px;
-  margin: 0 100px; /* Adjusted margin */
-  width: 200px; /* Set width for square shape */
-  height: 200px; /* Set height for square shape */
-  border: none; /* Remove default button border */
-  background-color: rgba(255, 255, 255, 0.7); /* Change background color */
-  color: #210000; /* Change text color */
+  margin: 0 100px;
+  width: 200px;
+  height: 200px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #210000;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
-/* Styles for the password form */
 
 .password-form {
   width: 300px;
@@ -45,5 +41,5 @@
   border-radius: 5px;
   margin: auto;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }

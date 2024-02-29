@@ -1,5 +1,3 @@
-// indexDomManipulation.js
-
 document.addEventListener("DOMContentLoaded", function () {
   const signupBox = document.getElementById("signupBox");
   const showSignupLink = document.getElementById("showSignup");
@@ -9,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   showSignupLink.addEventListener("click", function (e) {
     e.preventDefault();
-    console.log("Sign-up form submitted"); // Log message
+    console.log("Sign-up form submitted");
     signupBox.classList.remove("hidden");
     loginBox.classList.add("hidden");
     clearError(); // Clear any error message when switching between forms
@@ -17,13 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   showLoginLink.addEventListener("click", function (e) {
     e.preventDefault();
-    console.log("Sign-up form submitted"); // Log message
+    console.log("Sign-up form submitted");
     signupBox.classList.add("hidden");
     loginBox.classList.remove("hidden");
     clearError(); // Clear any error message when switching between forms
   });
 
   function clearError() {
-    errorContainer.textContent = ""; // Clear error message
+    errorContainer.textContent = "";
   }
 });
