@@ -37,7 +37,13 @@
 }
 
 /* Styles for the password form */
+
 .password-form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: auto;
   text-align: center;
-  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
 }
