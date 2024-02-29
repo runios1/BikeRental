@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .then((data) => {
         console.log("Sign-up Success:", data);
-        window.location.href = "/src/html/home.html";
+        window.location.href = "/BikeRental/src/html/home.html";
       })
       .catch((error) => {
         console.error("Sign-up Error:", error);
