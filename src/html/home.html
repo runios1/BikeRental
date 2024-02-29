@@ -1,3 +1,5 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,16 +11,16 @@
   </head>
   <body>
     <nav class="top-bar">
-      <button>Edit Password</button>
-      <button>My Bikes</button>
-      <button>Sent Requests</button>
+      <button id="editPasswordButton">Edit Password</button>
+      <button id="myBikesButton">My Bikes</button>
+      <button id="sentRequestsButton">Sent Requests</button>
     </nav>
     <main>
       <div class="big-buttons">
-        <button>Upload My Bike</button>
-        <button>Rent a Bike</button>
+        <button id="uploadButton">Upload My Bike</button>
+        <button id="rentButton">Rent a Bike</button>
       </div>
-      <form class="password-form formbox hidden">
+      <form id="passwordForm" class="password-form formbox hidden">
         <label for="oldPassword">Old Password:</label>
         <input
           type="password"
@@ -36,5 +38,6 @@
         <input type="submit" value="Change Password" />
       </form>
     </main>
+    <script src="../js/homeDomManipulation.js"></script>
   </body>
 </html>
