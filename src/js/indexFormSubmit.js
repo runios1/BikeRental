@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const signinForm = document.getElementById("signinForm");
   const errorContainer = document.getElementById("errorContainer");
 
+  // Sign-up event listener
   signupForm.addEventListener("submit", function (e) {
     e.preventDefault();
     const formData = new FormData(signupForm);
@@ -18,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .then((data) => {
         console.log("Sign-up Success:", data);
+        // Store the user's authentication status (username) in localStorage
+        localStorage.setItem("username", data.username);
         window.location.href = "/BikeRental/src/html/home.html";
       })
       .catch((error) => {
@@ -26,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 
+  // Sign-in event listener
   signinForm.addEventListener("submit", function (e) {
     e.preventDefault();
     const formData = new FormData(signinForm);
@@ -41,6 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .then((data) => {
         console.log("Sign-in Success:", data);
+        // Store the user's authentication status (username) in localStorage
+        localStorage.setItem("username", data.username);
+        console.log(data.username);
         window.location.href = "/BikeRental/src/html/home.html";
       })
       .catch((error) => {
