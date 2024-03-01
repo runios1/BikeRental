@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   uploadForm.addEventListener("submit", function (e) {
     e.preventDefault();
     const formData = new FormData(uploadForm);
+    formData.append("username", localStorage.getItem("username"));
     fetch("http://localHost:5500/bikes/upload", {
       method: "POST",
       body: formData,
