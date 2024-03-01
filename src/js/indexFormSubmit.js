@@ -46,8 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((data) => {
         console.log("Sign-in Success:", data);
         // Store the user's authentication status (username) in localStorage
-        localStorage.setItem("username", data.username);
-        console.log(data.username);
+        localStorage.setItem("username", data.user.username);
         window.location.href = "/BikeRental/src/html/home.html";
       })
       .catch((error) => {
