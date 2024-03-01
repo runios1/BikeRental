@@ -1,10 +1,11 @@
 class Bike {
   #user;
-  constructor(image, description, city, date, price, user) {
+  constructor(image, description, city, dateStart, dateEnd, price, user) {
     this.image = image;
     this.description = description;
     this.city = city;
-    this.date = date;
+    this.dateStart = dateStart;
+    this.dateEnd = dateEnd;
     this.price = price;
     this.#user = user;
   }
