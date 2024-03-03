@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
       .then((response) => {
         if (!response.ok) {
+          errorContainer.textContent = "Incorrect username or password.";
           throw new Error("Sign-in failed. Please try again.");
         }
         return response.json();
@@ -52,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch((error) => {
         console.error("Sign-in Error:", error);
         errorContainer.textContent = error.message;
+        errorContainer.classList.remove("hidden"); // Remove the hidden class
       });
   });
 });
