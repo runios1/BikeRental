@@ -1,11 +1,15 @@
 function createDomBikeList(bikes) {
-  const list = document.getElementById("bikeList");
-  bikes.array.forEach((bike) => {
+  console.log(bikes);
+  const list = document.getElementById("BikeList");
+  bikes.forEach((bike) => {
     const bikeListItem = document.createElement("li");
+    bikeListItem.className = "bikeListItem";
 
     const image = document.createElement("img");
-    image.src = bike.image;
+    image.src = "http://127.0.0.1:5500/BikeRentalServer/" + bike.image;
     image.alt = "Bike Image";
+
+    const detailsContainer = document.createElement("div");
 
     const description = document.createElement("p");
     description.textContent = bike.description;
@@ -20,9 +24,11 @@ function createDomBikeList(bikes) {
     dateEnd.textContent = bike.dateEnd;
 
     const price = document.createElement("p");
-    price.textContent = bike.price;
+    price.textContent = bike.price + "$ per day";
 
-    bikeListItem.append(image, description, city, dateStart, dateEnd, price);
+    detailsContainer.append(description, city, dateStart, dateEnd, price);
+
+    bikeListItem.append(image, detailsContainer);
 
     list.appendChild(bikeListItem);
   });
