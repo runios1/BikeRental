@@ -46,14 +46,13 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .then((data) => {
         console.log("Sign-in Success:", data);
-        // Store the user's authentication status (username) in localStorage
         localStorage.setItem("username", data.user.username);
         window.location.href = "/BikeRental/src/html/home.html";
       })
       .catch((error) => {
         console.error("Sign-in Error:", error);
         errorContainer.textContent = error.message;
-        errorContainer.classList.remove("hidden"); // Remove the hidden class
+        errorContainer.classList.remove("hidden");
       });
   });
 });

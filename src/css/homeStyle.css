@@ -35,7 +35,7 @@
 }
 
 .password-form {
-  position: relative; /* Add position relative */
+  position: relative;
   width: 300px;
   padding: 20px;
   border: 1px solid #ccc;
@@ -46,9 +46,9 @@
 }
 
 .errorContainer {
-  position: absolute; /* Add position absolute */
+  position: absolute;
   color: rgb(95, 20, 20);
-  bottom: 0px; /* Adjust as needed */
+  bottom: 0px;
   left: 170px;
   transform: translateX(-50%); /* Center horizontally */
 }

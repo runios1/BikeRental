@@ -10,9 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Check if username is stored in local storage
   const username = localStorage.getItem("username");
   if (!username) {
-    // Redirect to the sign-in page
     window.location.href = "/BikeRental/src/html/index.html";
-    return; // Stop further execution
+    return;
   }
 
   uploadButton.addEventListener("click", function () {
@@ -40,9 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   logoutButton.addEventListener("click", function () {
-    // Clear the username from local storage
     localStorage.removeItem("username");
-    // Redirect to the sign-in page
     window.location.href = "/BikeRental/src/html/index.html";
   });
 });

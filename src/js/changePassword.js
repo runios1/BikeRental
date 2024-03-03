@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const changePasswordForm = document.getElementById("passwordForm");
   const errorContainer = document.getElementById("errorContainer");
 
-  // Change password event listener
   changePasswordForm.addEventListener("submit", function (e) {
     e.preventDefault();
     const formData = new FormData(changePasswordForm);
