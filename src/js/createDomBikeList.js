@@ -31,6 +31,8 @@ function createDomBikeList(bikes) {
     bikeListItem.append(image, detailsContainer);
 
     list.appendChild(bikeListItem);
+
+    bike.domElement = bikeListItem;
   });
 }
 

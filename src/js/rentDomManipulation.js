@@ -6,23 +6,14 @@ function rentDomManipulation(bikes) {
 
   createDomBikeList(bikes); // Create DOM elements for each bike
 
-  // Select all bike list items
-  const bikeListItems = document.querySelectorAll(".bikeListItem");
-
-  // Iterate over each bike list item
-  bikeListItems.forEach((bikeListItem) => {
-    // Create a container for buttons
+  bikes.forEach((bike) => {
     const buttonContainer = document.createElement("div");
-
-    // Create button for renting
     const rentButton = document.createElement("button");
+
     rentButton.textContent = "Rent";
 
-    // Append the rent button to the button container
     buttonContainer.appendChild(rentButton);
-
-    // Append the button container to the bike list item
-    bikeListItem.appendChild(buttonContainer);
+    bike.domElement.appendChild(buttonContainer);
   });
 }
 
