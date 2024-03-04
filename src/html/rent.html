@@ -5,57 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/generalStyle.css" />
     <link rel="stylesheet" href="../css/rentStyle.css" />
-    <title>Rent a Bike</title>
+    <title>Rent Bike- My Bikes</title>
   </head>
   <body>
     <h1>Rent a Bike</h1>
+
+    <div class="top-bar">
+      <form class="searchBar">
+        <div class="formField">
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" />
+        </div>
+        <div class="formField">
+          <label for="startDate">Start Date:</label>
+          <input type="date" id="startDate" name="startDate" />
+        </div>
+        <div class="formField">
+          <label for="endDate">End Date:</label>
+          <input type="date" id="endDate" name="endDate" />
+        </div>
+        <input type="submit" value="Search" />
+      </form>
+    </div>
+
     <a href="../html/home.html" class="home-icon" id="homeIcon1">
-      <img src="../images/25694.png" alt="Home"
-    /></a>
-    <form class="searchBar">
-      <div class="formField">
-        <label for="city">City:</label>
-        <input type="text" id="city" name="city" />
-      </div>
-      <div class="formField">
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date" />
-      </div>
-      <input type="submit" value="Search" />
-    </form>
-    <ul id="BikeList">
-      <li>
-        <div class="bikeCard">
-          <img
-            src="https://p.vitalmtb.com/photos/users/38191/setup_checks/31002/photos/49168/original_001.jpg?1453396172"
-          />
-          <div>
-            <ul>
-              <li>name</li>
-              <li>city</li>
-              <li>price</li>
-              <li>date</li>
-              <li><button>request</button></li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="bikeCard">
-          <img
-            src="https://p.vitalmtb.com/photos/users/38191/setup_checks/31002/photos/49168/original_001.jpg?1453396172"
-          />
-          <div>
-            <ul>
-              <li>name</li>
-              <li>city</li>
-              <li>price</li>
-              <li>date</li>
-              <li><button>request</button></li>
-            </ul>
-          </div>
-        </div>
-      </li>
-    </ul>
+      <img src="../images/25694.png" alt="Home" />
+    </a>
+
+    <ul id="BikeList"></ul>
+    <script type="module" src="../js/getAllBikesSubmit.js"></script>
   </body>
 </html>

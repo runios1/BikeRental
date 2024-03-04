@@ -1,5 +1,8 @@
 import createDomBikeList from "./createDomBikeList.js";
 function applyBikeListOnPage(bikes) {
+  const bikeList = document.getElementById("BikeList");
+  bikeList.innerHTML = ""; // Clear the existing bike list
+
   createDomBikeList(bikes);
   const bikeListItems = document.querySelectorAll(".bikeListItem");
   bikeListItems.forEach((bikeListItem) => {
