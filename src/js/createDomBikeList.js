@@ -1,6 +1,7 @@
 function createDomBikeList(bikes) {
-  console.log(bikes);
   const list = document.getElementById("BikeList");
+  list.innerHTML = ""; // Clear existing bike list
+
   bikes.forEach((bike) => {
     const bikeListItem = document.createElement("li");
     bikeListItem.className = "bikeListItem";
@@ -10,21 +11,22 @@ function createDomBikeList(bikes) {
     image.alt = "Bike Image";
 
     const detailsContainer = document.createElement("div");
+    detailsContainer.className = "detailsContainer"; // Add class for styling
 
     const description = document.createElement("p");
-    description.textContent = bike.description;
+    description.textContent = "Description: " + bike.description;
 
     const city = document.createElement("p");
-    city.textContent = bike.city;
+    city.textContent = "City: " + bike.city;
 
     const dateStart = document.createElement("p");
-    dateStart.textContent = bike.dateStart;
+    dateStart.textContent = "Start Date: " + bike.dateStart;
 
     const dateEnd = document.createElement("p");
-    dateEnd.textContent = bike.dateEnd;
+    dateEnd.textContent = "End Date: " + bike.dateEnd;
 
     const price = document.createElement("p");
-    price.textContent = bike.price + "$ per day";
+    price.textContent = "Price: " + bike.price + " dollars per day";
 
     detailsContainer.append(description, city, dateStart, dateEnd, price);
 

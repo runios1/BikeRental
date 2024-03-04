@@ -3,3 +3,29 @@
   justify-content: space-around;
   margin: 5px;
 }
+
+/* CSS styles for bike list items */
+.bikeListItem {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.bikeListItem img {
+  max-width: 200px; /* Set a maximum width for the bike images */
+  max-height: 200px; /* Set a maximum height for the bike images */
+  width: auto; /* Allow the width to adjust proportionally */
+  height: auto; /* Allow the height to adjust proportionally */
+  margin-right: 20px;
+  object-fit: cover; /* Ensure images maintain aspect ratio and cover the designated area */
+}
+
+.bikeListItem .detailsContainer {
+  flex: 1; /* Allow details container to take remaining width */
+}
+
+.bikeListItem p {
+  margin: 5px 0; /* Add some vertical spacing between paragraphs */
+}
