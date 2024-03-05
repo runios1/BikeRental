@@ -25,6 +25,24 @@ function handleEditFormSubmit(bike, form) {
   });
 }
 
-function handleRemove(bike) {}
+function handleRemove(bike) {
+  fetch(`http://localHost:5500/bikes/remove/${bike.id}`, {
+    method: "DELETE",
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Bike removal failed.");
+      }
+      return false;
+    })
+    .then((data) => {
+      console.log("Bike removal Success:", data);
+      return true;
+    })
+    .catch((error) => {
+      console.error("Bike removal Error:", error);
+      return false;
+    });
+}
 
 export { handleEditFormSubmit, handleRemove };

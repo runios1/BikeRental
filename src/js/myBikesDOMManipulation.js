@@ -15,6 +15,7 @@ function applyBikeListOnPage(bikes) {
 
     const remove = document.createElement("button");
     remove.textContent = "Remove";
+    remove.onclick = () => handleRemove(bike);
 
     buttonConatiner.append(edit, remove);
   });
