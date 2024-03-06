@@ -215,3 +215,17 @@ body {
   width: 50px;
   height: auto; /* Maintain aspect ratio */
 }
+
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+dialog {
+  border: none;
+  border-radius: 5px;
+}
+
+dialog #closeButton {
+  float: inline-end;
+  margin: 7px;
+}
