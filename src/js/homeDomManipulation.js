@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const uploadButton = document.getElementById("uploadButton");
   const rentButton = document.getElementById("rentButton");
   const myBikesButton = document.getElementById("myBikesButton");
-  const sentRequestsButton = document.getElementById("sentRequestsButton");
   const editPasswordButton = document.getElementById("editPasswordButton");
   const passwordForm = document.getElementById("passwordForm");
   const logoutButton = document.getElementById("logoutButton");
@@ -24,10 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   myBikesButton.addEventListener("click", function () {
     window.location.href = "mybikes.html";
-  });
-
-  sentRequestsButton.addEventListener("click", function () {
-    window.location.href = "sent.html";
   });
 
   editPasswordButton.addEventListener("click", function () {
