@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((data) => {
         console.log("Change password Success:", data);
 
-        window.location.href = "/BikeRental/src/html/home.html";
+        window.location.href = "/html/home.html";
       })
       .catch((error) => {
         console.error("Change password Error:", error);

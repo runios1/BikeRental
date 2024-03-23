@@ -4,19 +4,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const searchBar = document.querySelector(".searchBar");
   const errorContainer = document.getElementById("errorContainer");
 
-  // Search event listener
   searchBar.addEventListener("submit", function (e) {
-    e.preventDefault(); // Prevent form submission
+    e.preventDefault();
 
     const formData = new FormData(searchBar);
-    const searchParams = new URLSearchParams(formData); // Create URLSearchParams from FormData
+    const searchParams = new URLSearchParams(formData);
 
-    // Convert searchParams to query string
     const queryString = searchParams.toString();
 
     fetch(`http://localhost:5500/bikes/rentBikes?${queryString}`, {
-      // Use query string in the URL
-      method: "GET", // Change method to GET
+      method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
@@ -33,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .catch((error) => {
         console.error("Fetch Error:", error);
-        // Handle the error here, such as displaying a message to the user
         errorContainer.textContent = error.message;
       });
   });

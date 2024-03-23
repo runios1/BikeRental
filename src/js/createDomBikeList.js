@@ -7,7 +7,7 @@ function createDomBikeList(bikes) {
     bikeListItem.className = "bikeListItem";
 
     const image = document.createElement("img");
-    image.src = "http://127.0.0.1:5500/BikeRentalServer/" + bike.image;
+    image.src = "http://127.0.0.1:5500/" + bike.image;
     image.alt = "Bike Image";
 
     const detailsContainer = document.createElement("div");

@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Sign-up Success:", data);
         // Store the user's authentication status (username) in localStorage
         localStorage.setItem("username", data.username);
-        window.location.href = "/BikeRental/src/html/home.html";
+        window.location.href = "/html/home.html";
       })
       .catch((error) => {
         console.error("Sign-up Error:", error);
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((data) => {
         console.log("Sign-in Success:", data);
         localStorage.setItem("username", data.user.username);
-        window.location.href = "/BikeRental/src/html/home.html";
+        window.location.href = "/html/home.html";
       })
       .catch((error) => {
         console.error("Sign-in Error:", error);

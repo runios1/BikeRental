@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .then((data) => {
         console.log("Upload Success:", data);
-        window.location.href = "/BikeRental/src/html/myBikes.html";
+        window.location.href = "/html/myBikes.html";
       })
       .catch((error) => {
         console.error("Upload Error:", error);
