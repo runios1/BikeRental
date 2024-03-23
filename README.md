@@ -37,6 +37,7 @@ The JavaScript files in the [js directory](src/js) handle the client-side logic 
 The [images directory](src/images) contains all the images (logos and icons) used in the website.
 
 ## Database
+
 Stored locally on the server side in the [BikeRentalServer](https://github.com/simonAouiz/BikeRentalServer) reposetory.
 
 ## Technologies Used
@@ -75,4 +76,4 @@ Routes define the endpoints that the client-side application can request. Each r
 
 ## Running the Project
 
-To run the project, you need to start both the client-side (this repo) and server-side ([BikeRentalServer](https://github.com/simonAouiz/BikeRentalServer)) applications. For each repository you should run npm install and npm run.
+To run the project, you need to start both the client-side (this repo) and server-side ([BikeRentalServer](https://github.com/simonAouiz/BikeRentalServer)) applications. For each repository you should run npm install and npm start.
