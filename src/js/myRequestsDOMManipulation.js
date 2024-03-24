@@ -21,7 +21,7 @@ async function applyRequestListOnPage(requests) {
     if (status !== null) {
       statusDOM.textContent = status.charAt(0).toUpperCase() + status.slice(1);
     } else {
-      statusDOM.textContent = "No Response";
+      statusDOM.textContent = "Pending";
     }
 
     const removeButton = document.createElement("button");
