@@ -1,5 +1,9 @@
 import createDomBikeList from "./createDomBikeList.js";
-import { handleEditFormSubmit, handleRemove } from "./myBikesButtonAction.js";
+import {
+  handleEditFormSubmit,
+  handleRemove,
+  handleRequests,
+} from "./myBikesButtonAction.js";
 function applyBikeListOnPage(bikes) {
   const bikeList = document.getElementById("BikeList");
   bikeList.innerHTML = ""; // Clear the existing bike list
@@ -17,7 +21,11 @@ function applyBikeListOnPage(bikes) {
     remove.textContent = "Remove";
     remove.onclick = () => handleRemove(bike);
 
-    buttonConatiner.append(edit, remove);
+    const requests = document.createElement("button");
+    requests.textContent = "Requests";
+    requests.onclick = () => handleRequests(bike);
+
+    buttonConatiner.append(edit, remove, requests);
   });
 }
 

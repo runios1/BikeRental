@@ -1,3 +1,5 @@
+import createRequestsDialog from "./requestsDialogDOM.js";
+
 function handleEditFormSubmit(bike, form) {
   const id = bike.id;
   form.addEventListener("submit", (event) => {
@@ -45,4 +47,24 @@ function handleRemove(bike) {
     });
 }
 
-export { handleEditFormSubmit, handleRemove };
+function handleRequests(bike) {
+  fetch(`http://localHost:5500/requests/display/bike/${bike.id}`, {
+    method: "GET",
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Request fetch failed.");
+      }
+      return response.json();
+    })
+    .then((requestsObj) => {
+      const unrespondedRequests = requestsObj.requests.filter(
+        (request) => request.status === null
+      );
+      createRequestsDialog(unrespondedRequests);
+    })
+    .catch((error) => {
+      console.error("Request fetch Error:", error);
+    });
+}
+export { handleEditFormSubmit, handleRemove, handleRequests };

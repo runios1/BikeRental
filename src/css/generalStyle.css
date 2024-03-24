@@ -229,3 +229,8 @@ dialog #closeButton {
   float: inline-end;
   margin: 7px;
 }
+
+#requestsContainer {
+  display: flex;
+  flex-direction: column;
+}
