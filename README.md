@@ -6,11 +6,35 @@ This project is a bike rental service where users can rent bikes from other user
 
 ### Home Page
 
-The home page is the main landing page for the website. It provides navigation to other pages and features buttons for uploading a bike for rent and renting a bike.
+The home page is the main landing page for the website. It provides navigation to other pages and features buttons for uploading a bike for rent and renting a bike. It also has a navigation bar with buttons that lead to the different pages in the website.
 
-### My Bikes Page
+# My Bikes Page
 
-The My Bikes page allows users to view all the bikes they have uploaded for rent. Users can edit the details of their bikes from this page and remove bikes as needed.
+The "My Bikes" page is a dedicated section of the application where users can view and manage the bikes they have listed for rent. This page provides a comprehensive overview of all the bikes listed by the user, including their current status and any rental requests they have received.
+
+Key features of the "My Bikes" page include:
+
+- **View All Listed Bikes**: Users can see a list of all their listed bikes, including details such as the bike's name, type, rental price, and availability status. This list is dynamically generated and updated.
+
+- **Manage Rental Requests**: For each listed bike, users can view and manage the rental requests they have received. They can accept or reject requests.
+
+- **Remove Bike**: Users also have the option to remove a bike from their list. This is particularly useful if the bike is no longer available for rent.
+
+- **Update Bike Details**: Users can update the details of their listed bikes, such as the rental price or availability status.
+
+# My Requests Page
+
+The "My Requests" page is a dedicated section of the application where users can view and manage their bike rental requests. This page provides a comprehensive overview of all the requests made by the user, including their current status.
+
+Key features of the "My Requests" page include:
+
+- **View All Requests**: Users can see a list of all their bike rental requests, including details such as the bike's name, rental period, and the status of the request (pending, accepted, or rejected).
+
+- **Request Status**: Each request is accompanied by its current status. The status can be "pending" if the request is still being processed, "accepted" if the request has been approved, or "rejected" if the request was not approved.
+
+- **Contact Information**: For accepted requests, users can view the contact information of the bike owner. This feature is hidden by default for privacy reasons, but users can view the information by clicking on the "Show Contact Info" button. In this way the owner's privacy is reserved while the renter and the owner can comunicate the details of the rent when permition is granted.
+
+- **Remove Request**: Users also have the option to remove a request from their list. This is particularly useful if a request has been rejected or if the user decides not to proceed with a request.
 
 ### Upload Page
 
