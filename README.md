@@ -8,7 +8,7 @@ This project is a bike rental service where users can rent bikes from other user
 
 The home page is the main landing page for the website. It provides navigation to other pages and features buttons for uploading a bike for rent and renting a bike. It also has a navigation bar with buttons that lead to the different pages in the website.
 
-# My Bikes Page
+### My Bikes Page
 
 The "My Bikes" page is a dedicated section of the application where users can view and manage the bikes they have listed for rent. This page provides a comprehensive overview of all the bikes listed by the user, including their current status and any rental requests they have received.
 
@@ -22,7 +22,7 @@ Key features of the "My Bikes" page include:
 
 - **Update Bike Details**: Users can update the details of their listed bikes, such as the rental price or availability status.
 
-# My Requests Page
+### My Requests Page
 
 The "My Requests" page is a dedicated section of the application where users can view and manage their bike rental requests. This page provides a comprehensive overview of all the requests made by the user, including their current status.
 
