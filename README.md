@@ -102,4 +102,4 @@ Routes define the endpoints that the client-side application can request. Each r
 
 ## Running the Project
 
-To run the project, you need to start both the client-side (this repo) and server-side ([BikeRentalServer](https://github.com/simonAouiz/BikeRentalServer)) applications. For each repository you should run npm install and npm start.
+To run the project, you need to start both the client-side (this repo) and server-side ([BikeRentalServer](https://github.com/simonAouiz/BikeRentalServer)) applications. After you clone each repository you should run npm install and npm start for each and open the port of the client side as it is writen in your terminal in a recently updated Google Chrome browser.
