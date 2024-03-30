@@ -14,13 +14,13 @@ The "My Bikes" page is a dedicated section of the application where users can vi
 
 Key features of the "My Bikes" page include:
 
-- **View All Listed Bikes**: Users can see a list of all their listed bikes, including details such as the bike's name, type, rental price, and availability status. This list is dynamically generated and updated.
+- **View All Listed Bikes**: Users can see a list of all their listed bikes, including details such as the bike's image, name or description, rental price and availability dates. This list is dynamically generated and updated.
 
 - **Manage Rental Requests**: For each listed bike, users can view and manage the rental requests they have received. They can accept or reject requests.
 
 - **Remove Bike**: Users also have the option to remove a bike from their list. This is particularly useful if the bike is no longer available for rent.
 
-- **Update Bike Details**: Users can update the details of their listed bikes, such as the rental price or availability status.
+- **Update Bike Details**: Users can update the details of their listed bikes, such as the rental price or availability dates.
 
 ### My Requests Page
 
@@ -30,9 +30,7 @@ Key features of the "My Requests" page include:
 
 - **View All Requests**: Users can see a list of all their bike rental requests, including details such as the bike's name, rental period, and the status of the request (pending, accepted, or rejected).
 
-- **Request Status**: Each request is accompanied by its current status. The status can be "pending" if the request is still being processed, "accepted" if the request has been approved, or "rejected" if the request was not approved.
-
-- **Contact Information**: For accepted requests, users can view the contact information of the bike owner. This feature is hidden by default for privacy reasons, but users can view the information by clicking on the "Show Contact Info" button. In this way the owner's privacy is reserved while the renter and the owner can comunicate the details of the rent when permition is granted.
+- **Contact Information**: When users' requests are accepted, they have the option to view the contact information of the bike owner. This feature is initially concealed to protect privacy, but users can reveal the information by clicking on the "Show Contact Info" button. This ensures the owner's privacy is maintained while allowing the renter and owner to communicate rental details upon permission.
 
 - **Remove Request**: Users also have the option to remove a request from their list. This is particularly useful if a request has been rejected or if the user decides not to proceed with a request.
 
@@ -42,7 +40,11 @@ The Upload page provides a form for users to upload their bikes for rent. Users 
 
 ### Rent Page
 
-The Rent page displays all available bikes for rent. Users can filter bikes based on city and available dates.
+- **View Available Bikes**: Users can see a list of all listed bikes, including details such as the bike's image, name or description, rental price and availability dates. This list is dynamically generated and updated.
+
+- **Filter By Preferences** : Users can filter bikes based on which city and available dates.
+
+- **Request a Bike** : Once they find a bike they're interested in, users can then send a rental request directly to the bike's owner through the built-in request system.
 
 ## Server
 
