@@ -76,7 +76,7 @@ SQLite is used as the database for this project. It's a C library that provides 
 
 ### Node.js
 
-Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It's used to run the server-side application.
+Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It's used to run both the server-side and client side applications.
 
 ### Vanilla JavaScript
 
